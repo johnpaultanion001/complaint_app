@@ -25,5 +25,8 @@ Route::resource('verify', Login\TwoFactorController::class)->only(['index', 'sto
 Route::prefix('admin')->as('admin.')->middleware(['auth','twofactor'])->group(function() {
     Route::get('/profile', [Admin\StudentController::class, 'profile'])->name('profile');
     Route::post('/profile', [Admin\StudentController::class, 'update_profile'])->name('update_profile');
+    Route::get('/sanction', [Admin\StudentController::class, 'sanction'])->name('sanction');
+    Route::get('/complaint', [Admin\StudentController::class, 'complaint'])->name('complaint');
+    Route::post('/complaint', [Admin\StudentController::class, 'store_complaint'])->name('store_complaint');
 });
 

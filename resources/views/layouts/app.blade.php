@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ url('public/assets/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     @yield('style') 
 </head>
 
@@ -40,6 +41,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{ url('public/assets/js/sb-admin-2.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     @yield('script') 
 </body>
 
