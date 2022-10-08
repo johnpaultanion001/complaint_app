@@ -14,24 +14,9 @@ use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
 
     use RegistersUsers;
 
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
@@ -59,15 +44,11 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\Models\User
-     */
+   
     protected function create(array $data)
     {
         $user = User::create([
+            'name'  => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
@@ -75,18 +56,12 @@ class RegisterController extends Controller
             'user_id' => $user->id,
             'role_id' => 2,
         ]);
-        PersonalDetail::create([
-            'user_id'	  => $user->id,
-            'name'	  => $data['name'],
-            'province_code'  => '0458',
-            'city_municipality_code'    => '045802',
-        ]);
-        BusinessDetail::create([
-            'user_id'	  => $user->id,
-            'business_province_code'  => '0458',
-            'business_city_municipality_code'    => '045802',
-            
-        ]);
         return $user;
+    }
+
+    protected function authenticated(Request $request, $user)
+    {
+        $user->generateTwoFactorCode();
+        $user->notify(new TwoFactorCode());
     }
 }

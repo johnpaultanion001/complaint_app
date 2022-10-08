@@ -11,22 +11,23 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-
     protected $dates = [
         'two_factor_expires_at',
     ];
 
     protected $fillable = [
-        'social_id',
+        'name',
+        'lrn',
         'email',
-        'provider', 
+        'profile',
+        'grade',
+        'section',
+        'contact_number',
+        'guardian_name',
+        'guardian_contact_number',
         'password',
-        'reg_step',
-        'status',
-        'remarks',
         'two_factor_code',
         'two_factor_expires_at',
-        'isSubmit',
     ];
 
     protected $hidden = [

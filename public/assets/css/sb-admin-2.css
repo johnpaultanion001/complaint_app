@@ -2605,8 +2605,8 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #5a5c69;
-  border-color: #5a5c69;
+  background-color: #111;
+  border-color: #111;
 }
 
 .btn-dark:hover {
@@ -10873,13 +10873,11 @@ form.user .custom-checkbox.small label {
 
 form.user .form-control-user {
   font-size: 0.8rem;
-  border-radius: 10rem;
   padding: 1.5rem 1rem;
 }
 
 form.user .btn-user {
   font-size: 0.8rem;
-  border-radius: 10rem;
   padding: 0.75rem 1rem;
 }
 

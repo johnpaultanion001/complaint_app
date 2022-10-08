@@ -51,7 +51,7 @@ class Handler extends ExceptionHandler
     public function report(Throwable $e)
     {
         if ($e instanceof \Illuminate\Session\TokenMismatchException) {
-            return redirect()->route('admin.dashboard');
+            return redirect()->route('admin.profile');
         }
     }
 }
