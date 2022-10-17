@@ -23,7 +23,9 @@
                     <div class="col-lg-12">
                         <div>
                             <div class="text-center">
-                               <h1>Create new Account</h1>
+                                <img  src="{{ trans('panel.logo') }}" alt="logo" class="z-depth-2" width="120" height="120">
+                                <br>
+                               <h1>Create new account</h1>
                             </div>
                             <br><br>
                             <form class="user" method="POST" action="{{ route('register') }}">

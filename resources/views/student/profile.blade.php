@@ -57,6 +57,7 @@
                             <div class="text-center">
                                <h1>STUDENT PROFILE</h1>
                                <br>
+                              
                             </div>
                             <form method="POST" id="myForm" class="user" enctype="multipart/form-data">
                             @csrf
@@ -68,11 +69,13 @@
                                                 <img src="@if(Auth()->user()->profile != '') {{ asset('public/assets/student')}}/{{Auth()->user()->profile}} @else {{ asset('public/assets/student/user.png') }}  @endif " class="picture-src" id="wizardProfilePreview" title="" />
                                                 <input type="file" id="wizard-profile" name="profile" accept="image/*" >
                                             </div>
-                                            <span >
+                                            <span>
                                                 <strong style="font-size: .875em; color: #dc3545;" id="error-wizard-profile"></strong>
                                             </span>
                                         </div>
                                     </div>
+                                    <h6 id="alert_account" class="text-success text-center mt-2"></h6>
+
                                 </div>
                                 <div class="form-group">
                                     <small>Name: <span class="text-danger">*</span></small>
@@ -207,12 +210,15 @@
                                 $('#error-wizard-profile').text(value)
                             }
                         })
-                    }
-                    if(data.success){
+                    }else{
                         $('.form-control').removeClass('is-invalid')
-                        $('#myForm')[0].reset();
-                        window.location.href = "sanction";
+                        if(data.success == 0){
+                            $('#alert_account').text('Wait for the administration response to approved your account');
+                        }else{
+                            window.location.href = "sanction";
+                        }
                     }
+                   
                     
                 }
             });
