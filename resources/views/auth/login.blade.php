@@ -20,11 +20,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="">
+                            
                             <div class="text-center">
-                               <h1>Login</h1>
+                                <img  src="{{ trans('panel.logo') }}" alt="logo" class="z-depth-2" width="120" height="120">
+                                <br>
+                                <br>
+                                <h1>Login</h1>
                                <h6>Sign in to continue</h6>
                             </div>
-                            <br>
                             <br>
                             <br>
                             <br>

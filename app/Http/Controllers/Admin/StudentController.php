@@ -56,7 +56,7 @@ class StudentController extends Controller
             'profile'   => $file_name_to_save ?? Auth()->user()->profile,
         ]);
 
-        return response()->json(['success' => 'updated']);
+        return response()->json(['success' => Auth()->user()->isApproved,]);
     }
 
     public function sanction(){

@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
             ],
             [
                 'id'             => '2',
-                'email'          => 'johnpaultanion001@gmail.com',
+                'email'          => 'student@gmail.com',
                 'password'       => '$2y$10$vUIzDlvfpu2yOATsPYcPaOTY/zgbgwViLIWSfZxSlmRBFV.g/fmOW',
                 'email_verified_at' => date("Y-m-d H:i:s"),
                 'remember_token' => null,

@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'site_title' => 'EKYC DTI',
+    'site_title' => 'COMPLAINT',
+    'logo'       => 'public/assets/student/logo.jpg',
 ];
