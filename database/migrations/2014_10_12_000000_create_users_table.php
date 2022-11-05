@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('guardian_name')->nullable();
             $table->string('password');
             $table->string('guardian_contact_number')->nullable();
-            $table->boolean('isApproved')->default(false);
+            $table->boolean('isApproved')->default(true);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

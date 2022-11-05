@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: WebView(
-          initialUrl: "http://complaintapp.com/",
-          javascriptMode: JavascriptMode.unrestricted,
+      home: SafeArea(
+        child: Scaffold(
+          body: WebView(
+            initialUrl: "https://complaint.supsofttech.com/login",
+            javascriptMode: JavascriptMode.unrestricted,
+          ),
         ),
       ),
     );
