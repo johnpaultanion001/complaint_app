@@ -26,7 +26,10 @@
                                 <br>
                                 <br>
                                 <h1>Login</h1>
-                               <h6>Sign in to continue</h6>
+                                <h6>Sign in to continue</h6>
+                                @if(!empty($message))
+                                    <h6>{{ $message }}</h6>
+                                @endif
                             </div>
                             <br>
                             <br>
@@ -57,9 +60,6 @@
                                 </button>
                             </form>
                             <br><br>
-                            <div class="text-center">
-                                <a class="small text-dark" href="forgot-password.html">Forgot Password?</a>
-                            </div>
                             <div class="text-center">
                                 <a class="small text-dark" href="{{ url('/register') }}">Create an Account!</a>
                             </div>
