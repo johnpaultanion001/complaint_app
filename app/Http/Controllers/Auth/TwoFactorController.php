@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Notifications\TwoFactorCode;
+use App\Notifications\VerificationCode;
 use Illuminate\Http\Request;
 
 class TwoFactorController extends Controller
@@ -34,15 +34,15 @@ class TwoFactorController extends Controller
             return redirect()->route('admin.profile', ['user' => auth()->user()->id]);
         }
 
-        return redirect()->back()->withErrors(['two_factor_code' => 'The two factor code you have entered does not match']);
+        return redirect()->back()->withErrors(['two_factor_code' => 'The Verification code you have entered does not match']);
     }
 
     public function resend()
     {
         $user = auth()->user();
         $user->generateTwoFactorCode();
-        $user->notify(new TwoFactorCode());
+        $user->notify(new VerificationCode());
 
-        return redirect()->back()->withMessage('The two factor code has been sent again');
+        return redirect()->back()->withMessage('The Verification code has been sent again');
     }
 }

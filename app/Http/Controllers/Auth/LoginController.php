@@ -11,7 +11,7 @@ use App\Models\RoleUser;
 use App\Models\PersonalDetail;
 use App\Models\BusinessDetail;
 use Auth;
-use App\Notifications\TwoFactorCode;
+use App\Notifications\VerificationCode;
 
 class LoginController extends Controller
 {
@@ -29,6 +29,6 @@ class LoginController extends Controller
 	protected function authenticated(Request $request, $user)
     {
         $user->generateTwoFactorCode();
-        $user->notify(new TwoFactorCode());
+        $user->notify(new VerificationCode());
     }
 }
