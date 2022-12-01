@@ -62,20 +62,22 @@
                             @csrf
                               <div class="row mx-auto">
                                 <div class="col-md-10">
-                                    <h5 class="text-dark font-weight-bold">MILD</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h5 class="text-dark font-weight-bold">MINOR</h5>
+                                    <p>If the complaints of student or teacher is easy, such as arriving late to class, running in the corridor, disobedient, Inappropriate behaviour by chair rocking, calling out and etc. Teacher or the Head will give a warning to student that has been doing bad behaviour or offences and it will be recorded by teacher everytime.</p>
                                     <hr>
                                 </div>
                                
                                 <div class="col-md-10">
                                     <h5 class="text-dark font-weight-bold">MIDDLE</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>If the students is being complaints by vandilism, bad language, disrespectful to person or property, misuse of things in school, or if student is still repeating the offences that they had. Parents will be inform thru email and need to go to school and talk to the guidance about the complaint for his/her child. Guidance will record and give a proper sanctions such as writing a apology letter, cleaning the rooms, and etc.</p>
                                     <hr>
                                 </div>
                                 
                                 <div class="col-md-10">
                                     <h5 class="text-dark font-weight-bold">MAJOR</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>Serious complaints of discipline to student such as theft, fighting or bullying may lead to suspension or in extreme 
+                                        cases or for repeated offences, offenders may be asked to leave the school.
+                                        Parents will also be informed and talk to the head of guidance about the sanctions or if it's really serious then to the principal.</p>
                                     <hr>
                                 </div>
                               </div>

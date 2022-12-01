@@ -55,7 +55,7 @@
                         <div class="">
                             <br>
                             <div class="text-center">
-                               <h1>STUDENT PROFILE</h1>
+                               <h1>PROFILE</h1>
                                <br>
                               
                             </div>

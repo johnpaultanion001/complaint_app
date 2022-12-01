@@ -1,5 +1,5 @@
 @extends('../layouts.app')
-@section('sub-title','OTP')
+@section('sub-title','Verification')
 
 @section('content')
 <div class="row justify-content-center">
@@ -11,7 +11,7 @@
                     <div class="col-lg-10 mx-auto">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">One Time Pin</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Verification Code</h1>
                                 @if(session()->has('message'))
                                     <p class="alert alert-info">
                                         {{ session()->get('message') }}
