@@ -20,15 +20,6 @@ class UsersTableSeeder extends Seeder
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ],
-            [
-                'id'             => '2',
-                'email'          => 'student@gmail.com',
-                'password'       => '$2y$10$vUIzDlvfpu2yOATsPYcPaOTY/zgbgwViLIWSfZxSlmRBFV.g/fmOW',
-                'email_verified_at' => date("Y-m-d H:i:s"),
-                'remember_token' => null,
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
-            ],
             
         ];
 

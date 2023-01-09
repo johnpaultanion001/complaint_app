@@ -15,6 +15,7 @@ class Complaint extends Model
         'isTeacher',
         'grade',
         'section',
-        'complaint'
+        'complaint',
+        'status',
     ];
 }

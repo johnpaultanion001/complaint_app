@@ -11260,6 +11260,11 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
+.background {
+  background: linear-gradient(-50deg, #1e90ff 60%, #63D7FF 60%) !important;
+  
+}
+
 
 
 

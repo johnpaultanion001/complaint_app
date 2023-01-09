@@ -215,3 +215,8 @@ h5.title{
     }
 }
 
+.background {
+    background: linear-gradient(-50deg, #1e90ff 60%, #63D7FF 60%) !important;
+    height: 100vh;
+  }
+

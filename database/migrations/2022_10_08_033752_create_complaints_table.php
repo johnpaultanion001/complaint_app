@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('grade')->nullable();
             $table->string('section')->nullable();
             $table->string('complaint')->nullable();
+            $table->string('status')->default('PENDING');
             $table->timestamps();
         });
     }
