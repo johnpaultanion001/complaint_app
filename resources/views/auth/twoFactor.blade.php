@@ -26,7 +26,7 @@
                             <form method="POST" action="{{ route('verify.store') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <input name="two_factor_code" type="text" class="form-control form-control-user {{ $errors->has('two_factor_code') ? ' is-invalid' : '' }}" required autofocus placeholder="Two Factor Code">
+                                    <input name="two_factor_code" type="text" class="form-control form-control-user {{ $errors->has('two_factor_code') ? ' is-invalid' : '' }}" required autofocus placeholder="Verification Code">
                                     @if($errors->has('two_factor_code'))
                                         <div class="invalid-feedback">
                                             {{ $errors->first('two_factor_code') }}
